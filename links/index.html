@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hyperlinks - HTML5 University</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1><code>HTML5 University</code></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/color/index.html">Color</a></li>
+				<li><a href="/lists/index.html">Lists</a></li>
+				<li><a href="/links/index.html">Hyperlinks</a></li>
+				<li><a href="/graphics/index.html">Images</a></li>
+				<li><a href="/tables/index.html">Tables</a></li>
+				<li><a href="/multimedia/index.html">Multimedia</a></li>
+				<li><a href="/forms/index.html">Forms</a></li>
+				<li><a href="/bestpractices/index.html">Best Practices</a></li>
+				<li><a href="/contact/index.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h2>Hyperlinks</h2>
+			<p>Links are how webpages are connected on a website and throughout the internet.  Links can be internal or external, and can their behavior can be modified depending on how they are created.</p>
+			<hr>
+			<h3>Internal Links</h3>
+			<p>The following adds a hyperlink to a local file:</p>
+			<div class="codecontainer"><code>
+				<br>
+				<br>&lt;a href="../index.html"&gt;Home Page&lt;/a&gt;
+			</code></div>
+			<p>which would result in:</p>
+			<a href="/index.html">Home Page</a>
+			<hr>
+			<h3>External Links</h3>
+			<p>The following adds a hyperlink to an external website:</p>
+			<div class="codecontainer"><code>
+				<br>
+				<br>&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;
+			</code></div>
+			<p>which would result in:</p>
+			<a href="https://www.google.com/">Google</a>
+			<hr>
+			<h3>The <code>target</code> Attribute</h3>
+			<p>This attribute is used to determine where to open a link.</p>
+			<ul>
+				<li><strong>_blank</strong> - Opens in a new window/tab</li>
+				<li><strong>_self</strong> - Opens in the same window/tab</li>
+				<li><strong>_parent</strong> - Opens in the parent frame</li>
+				<li><strong>_top</strong> - Opens in a full window (Good for breaking out of a framed window)</li>
+			</ul>
+			<div class="codecontainer"><code>
+				<br>
+				<br>&lt;a href="https://www.google.com/" target="_blank"&gt;Google&lt;/a&gt;
+			</code></div>
+			<p>which would result in:</p>
+			<a href="https://www.google.com/" target="_blank">Google</a>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<footer>
+			<p>Copyright&copy; <a href="/index.html">Brian Kallie</a></p>
+		</footer>
+	</div>
+</body>
+</html>

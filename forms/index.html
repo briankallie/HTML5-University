@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forms - HTML5 University</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1><code>HTML5 University</code></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/color/index.html">Color</a></li>
+				<li><a href="/lists/index.html">Lists</a></li>
+				<li><a href="/links/index.html">Hyperlinks</a></li>
+				<li><a href="/graphics/index.html">Images</a></li>
+				<li><a href="/tables/index.html">Tables</a></li>
+				<li><a href="/multimedia/index.html">Multimedia</a></li>
+				<li><a href="/forms/index.html">Forms</a></li>
+				<li><a href="/bestpractices/index.html">Best Practices</a></li>
+				<li><a href="/contact/index.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h2>Forms</h2>
+			<p>Forms are an excellent way to allow you to collect input from your users.  For the sake of brevity, we will show multiple form controls at once.</p>
+			<hr>
+			<h3>Form Intro</h3>
+			<p>To begin creating a form, one should use the <code>form</code>, <code>fieldset</code>, and <code>legend</code> elements to define the forms' structure.  The form element is what defines the html form and contains all other form controls (like a container).  The fieldset separates and groups related controls in a form.  The legend specifies a caption for a fieldset element.</p>
+			<div class="codecontainer"><code>
+				<br>
+				<br>&lt;form name="formintro" id="formintro"&gt;
+				<br>&lt;fieldset&gt;
+				<br>&lt;legend&gt;First Group&lt;/legend&gt;
+				<br>&lt;p&gt;FORM CONTROLS GO HERE...&lt;/p&gt;
+				<br>&lt;/fieldset&gt;
+				<br>&lt;fieldset&gt;
+				<br>&lt;legend&gt;Second Group&lt;/legend&gt;
+				<br>&lt;p&gt;MORE FORM CONTROLS GO HERE...&lt;/p&gt;
+				<br>&lt;/fieldset&gt;
+				<br>&lt;/form&gt;
+			</code></div>
+			<p>would result in:</p>
+			<form name="formintro" id="formintro">
+				<fieldset>
+					<legend>First Group</legend>
+					<p>FORM CONTROLS GO HERE...</p>
+				</fieldset>
+				<fieldset>
+					<legend>Second Group</legend>
+					<p>MORE FORM CONTROLS GO HERE...</p>
+				</fieldset>
+			</form>
+			<br>
+			<hr>
+			<h3>Form Controls</h3>
+			<p>Forms can have many controls such as labels, text inputs (also known as textboxes), textareas, drop-down lists, radio buttons, checkboxes, number inputs (also known as spinners) and buttons.</p>
+			<div class="codecontainer"><code>
+				<br>
+				<br>&lt;form name="myform" id="myform" method="post" action="http://webdevbasics.net/scripts/demo.php"&gt;
+				<br>&lt;fieldset&gt;
+				<br>&lt;legend&gt;Control Examples&lt;/legend&gt;
+				<br>&lt;p&gt;&lt;label for="txtbox"&gt;Textbox:&lt;/label&gt;
+				<br>&lt;input type="text" name="txtbox" id="txtbox" required="required" placeholder="Enter text here"&gt;&lt;/p&gt;
+				<br>&lt;p&gt;&lt;input type="checkbox" name="chkgroup" id="item1" value="item1"&gt;
+				<br>&lt;label for="item1"&gt;Checkbox #1&lt;/label&gt;
+				<br>&lt;br&gt;&lt;input type="checkbox" name="chkgroup" id="item2" value="item2"&gt;
+				<br>&lt;label for="item2"&gt;Checkbox #2&lt;/label&gt;
+				<br>&lt;br&gt;&lt;input type="checkbox" name="chkgroup" id="item3" value="item3"&gt;
+				<br>&lt;label for="item3"&gt;Checkbox #3&lt;/label&gt;&lt;/p&gt;
+				<br>&lt;p&gt;Dropdown box: &lt;select size="1" name="num" id="num"&gt;
+				<br>&lt;option value="unspecified" selected="selected"&gt; - &lt;/option>
+				<br>&lt;option value="1"&gt;1&lt;/option&gt;
+				<br>&lt;option value="2"&gt;2&lt;/option&gt;
+				<br>&lt;option value="3"&gt;3&lt;/option&gt;
+				<br>&lt;option value="4"&gt;4&lt;/option&gt;
+				<br>&lt;/select&gt;&lt;/p&gt;
+				<br>&lt;p&gt;Number Input (also known as a spinner) &lt;input type="number" name="numselect" id="numselect" min="1" max="10"&gt;&lt;/p&gt;
+				<br>&lt;p&gt;&lt;input type="radio" name="rdgroup" id="radiobtn1" value="radio1" checked&gt;
+				<br>&lt;label for="radiobtn1"&gt;Radio Option #1&lt;/label&gt;
+				<br>&lt;br&gt;&lt;input type="radio" name="rdgroup" id="radiobtn2" value="radio2"&gt;
+				<br>&lt;label for="radiobtn2"&gt;Radio Option #2&lt;/label&gt;
+				<br>&lt;br&gt;&lt;input type="radio" name="rdgroup" id="radiobtn3" value="radio3"&gt;
+				<br>&lt;label for="radiobtn3"&gt;Radio Option #3&lt;/label>&lt;/p&gt;
+				<br>&lt;p&gt;&lt;textarea name="message" id="message" rows="10" placeholder="Text areas are great for email and messages that would take paragraphs to express!"&gt;&lt;/textarea&gt;&lt;/p&gt;
+				<br>&lt;p&gt;&lt;input type="submit" value="Send" id="send"&gt;
+				<br>&lt;input type="reset" value="Reset" id="reset"&gt;&lt;/p&gt;
+				<br>&lt;/fieldset&gt;
+				<br>&lt;/form&gt;
+			</code></div>
+			<p>would result in:</p>
+			<form name="myform" id="myform" method="post" action="http://webdevbasics.net/scripts/demo.php">
+				<fieldset>
+					<legend>Control Examples</legend>
+					<p>
+						<label for="txtbox">Textbox:</label>
+						<input type="text" name="txtbox" id="txtbox" required="required" placeholder="Enter text here">
+					</p>
+					<p>
+						<input type="checkbox" name="chkgroup" id="item1" value="item1">
+						<label for="item1">Checkbox #1</label>
+						<br><input type="checkbox" name="chkgroup" id="item2" value="item2">
+						<label for="item2">Checkbox #2</label>
+						<br><input type="checkbox" name="chkgroup" id="item3" value="item3">
+						<label for="item3">Checkbox #3</label>
+					</p>
+					<p>Dropdown box: 
+						<select size="1" name="num" id="num">
+							<option value="unspecified" selected="selected"> - </option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</p>
+					<p>Number Input (also known as a spinner) 
+						<input type="number" name="numselect" id="numselect" min="1" max="10">
+					</p>
+					<p>
+						<input type="radio" name="rdgroup" id="radiobtn1" value="radio1" checked>
+						<label for="radiobtn1">Radio Option #1</label>
+						<br><input type="radio" name="rdgroup" id="radiobtn2" value="radio2">
+						<label for="radiobtn2">Radio Option #2</label>
+						<br><input type="radio" name="rdgroup" id="radiobtn3" value="radio3">
+						<label for="radiobtn3">Radio Option #3</label>
+					</p>
+					<p>
+						<textarea name="message" id="message" rows="10" placeholder="Text areas are great for email and messages that would take paragraphs to express!"></textarea>
+					</p>
+					<p>
+						<input type="submit" value="Send" id="send">
+						<input type="reset" value="Reset" id="reset">
+					</p>
+				</fieldset>
+			</form>
+			<br>
+			<hr>
+			<h3>Summary</h3>
+			<p>As you can see, the form element and its many controls make for a very powerful and useful html element.  Textboxes are useful for short strings and small bits of data.  Checkboxes can be used for when you want to give users the choice to select multiple options from a group of choices.  Radio buttons can be used for when you want to give users only one choice out of many.  Dropdowns work similar to radio buttons, except they would be more compact in presentation.  Number inputs (spinners) also work similar to radio buttons and dropdown lists, only in a different format. Text areas are good for long messages, such as the body of an email.  Finally, buttons can process (or reset) the form when it is fully filled out.</p>
+			<p>Within the form controls, many tag attributes can be used to modify the behavior of the controls before and after form submission</p>
+			<ul>
+				<li><code>action</code> - The script that handles form data when the form is submitted</li>
+				<li><code>autofocus</code> - Which element gets initial focus when the page is loaded (Used mainly on textboxes)</li>
+				<li><code>for</code> - Specifies which form control the label is bound to</li>
+				<li><code>id</code> - Specifies a unique ID to an html element</li>
+				<li><code>max</code> and <code>min</code> - Refers to the maximum and minimum values of an input</li>
+				<li><code>method</code> - Refers to the HTTP method used when sending form data (POST is the default)</li>
+				<li><code>name</code> - Specifies the name of an element; when used for checkboxes and radio buttons, same names on said elements group them together</li>
+				<li><code>placeholder</code> - Specifies what text should be displayed (usually used for textboxes/textareas)</li>
+				<li><code>required</code> - Specifies that an element MUST be filled out prior to submission</li>
+				<li><code>rows</code> - Specifies how many rows should be visible on screen in a textarea</li>
+				<li><code>size</code> - Specifies the visible size of an input</li>
+				<li><code>type</code> - Used to designate the type of form control to use</li>
+				<li><code>value</code> - Used to designate the value of a form element</li>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<footer>
+			<p>Copyright&copy; <a href="/index.html">Brian Kallie</a></p>
+		</footer>
+	</div>
+</body>
+</html>

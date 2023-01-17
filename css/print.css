@@ -1,0 +1,18 @@
+/* PROJECT CSS */
+/* ----------------- */
+html {
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+nav {
+	display:none;
+}
+
+#contactform {
+	display: none;
+}
+
+.noshow {
+	display:none;
+}

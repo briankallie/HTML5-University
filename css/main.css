@@ -1,0 +1,231 @@
+/* PROJECT CSS */
+/* ----------------- */
+/* Elements */
+body {
+	background-color: #D2B48C;
+	font-family: "Lucida Sans Console", sans-serif;
+}
+
+header {
+	text-align: center;
+	background-color: #FFDEAD;
+	color: #4169E1;
+	border-radius: 10px 10px 0 0;
+	padding: 2px;
+}
+
+nav {
+	float: left;
+	width: 15%;
+	text-align: left;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	color: #000000;
+	padding: 3px 10px;
+	width: 115%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	clear: both;
+	font-size: 0.8em;
+	background-color: #FFDEAD;
+	margin: auto;
+	text-align: center;
+	padding: 4px;
+	border-radius: 0 0 10px 10px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+/* ID's */
+#wrapper {
+	width: 100%;
+	max-width: 1000px;
+	min-width: 300px;
+	margin: 12px auto;
+	background-color: #FAEBD7;
+	border-radius: 10px;
+}
+
+#content {
+	float: right;
+	background-color: #FFFFFF;
+	width: 80%;
+	padding: 0 12px;
+	position: inherit;
+	height: 100%;
+	min-height: 450px;
+	background-image: url("../images/bg_img.png");
+	background-repeat: no-repeat;
+	background-position: right 5px bottom 5px;
+}
+
+#contactform {
+	border: 2px solid black;
+	padding: 20px;
+	border-radius:10px;
+	background-color: #faebd7;
+	width: 70%;
+	max-width: 600px;
+	min-width: 200px;
+	margin: auto;
+}
+
+#message {
+	width: 96%;
+}
+
+#pluslist{
+	list-style-image: url('../images/plus.png');
+	line-height: 150%;
+}
+
+#minuslist {
+	list-style-image: url('../images/minus.png');
+	line-height: 150%;
+}
+
+ul#pluslist li{
+	padding-bottom: 20px;
+}
+
+ul#minuslist li{
+	padding-bottom: 20px;
+}
+
+input#btnsubmit {
+    background-color: #008000;
+    width: 48%;
+    color: #ffffff;
+}
+
+input#btnreset {
+    background-color: #ff0000;
+    width: 48%;
+    color: #ffffff;
+}
+
+/* Classes */
+.codecontainer {
+	color: #A9A9A9;
+	background-color: #F5F5F5;
+	margin: auto;
+	width: 85%;
+	border-left: 4px solid #4169E1;
+	padding: 7px 10px;
+	font-family: monospace;
+	word-wrap: break-word;
+}
+
+.codecontainer:before {
+	content: 'HTML/CSS';
+	text-decoration: underline;
+	text-indent: 5px;
+	font-size: 1.2em;
+	color: #4169E1;
+	font-weight: bold;
+	padding:1px 0;
+}
+
+.cflabel {
+	width:120px;
+	padding-top: 10px;
+	text-align:right;
+	display:inline-block;
+}
+
+/* Pseudo Elements */
+nav a:link {
+	background-color: #FAEBD7;
+}
+
+nav a:visited {
+	background-color: #FAEBD7;
+}
+
+nav a:focus, nav a:hover, nav a:active {
+	background-color: #CD853F;
+	color: #000000;
+}
+
+p.firstletter:first-letter {
+	font-size: 25px;
+	color: #4169E1;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 800px) {
+	nav {
+		float: none;
+		width: 100%;
+	}
+
+	nav ul {
+		text-align: left;
+	}
+
+	nav li{
+		width: 24.5%;
+		overflow-x: hidden;
+		display: inline-block;
+	}
+
+	#content {
+		float: none;
+		width: initial;
+		padding-top: 1px;
+	}
+
+	#wrapper {
+		margin: 0;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	nav li {
+		width: 100%;
+		overflow-x: hidden;
+		border: 1px solid #CD853F;
+		margin: -2px -1px;
+		padding-top: 0px;
+	}
+
+	nav a {
+		padding-top:10px;
+	}
+
+	nav a:focus, nav a:hover, nav a:active {
+		background-color: #CD853F;
+		color: #000000;
+	}
+}
+
+/* COLORS */
+/*
+Page Background: Tan - #D2B48C
+Wrapper Background: AntiqueWhite - #FAEBD7
+Header/Footer Background: NavajoWhite - #FFDEAD
+Content Background: White - #FFFFFF
+Code Background: WhiteSmoke - #F5F5F5
+Text: Black - #000000
+Code Text: DarkGrey - #A9A9A9;
+Hightlight Text: RoyalBlue - #4169E1
+*/
+
+/* SIZES */
+/*
+Ipad - 1024px width
+Mobile - 400px width (give or take)
+*/

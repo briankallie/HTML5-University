@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact Us - HTML5 University</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1><code>HTML5 University</code></h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="/index.html">Home</a></li>
+				<li><a href="/color/index.html">Color</a></li>
+				<li><a href="/lists/index.html">Lists</a></li>
+				<li><a href="/links/index.html">Hyperlinks</a></li>
+				<li><a href="/graphics/index.html">Images</a></li>
+				<li><a href="/tables/index.html">Tables</a></li>
+				<li><a href="/multimedia/index.html">Multimedia</a></li>
+				<li><a href="/forms/index.html">Forms</a></li>
+				<li><a href="/bestpractices/index.html">Best Practices</a></li>
+				<li><a href="/contact/index.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div id="content">
+			<h2>Contact Us</h2>
+			<div id="contactemail">
+				<h3 class="noshow">Send a Message</h3>
+				<form name="contactform" id="contactform" method="post" action="http://webdevbasics.net/scripts/demo.php">
+					<fieldset>
+						<legend>Personal Info</legend>
+						<label for="fname" class="cflabel">First Name:</label>
+						<input type="text" name="fname" id="fname" required="required" placeholder="Required" autofocus="autofocus">
+						<br>
+						<label for="lname" class="cflabel">Last Name:</label>
+						<input type="text" name="lname" id="lname" required="required" placeholder="Required">
+						<br>
+						<label for="phone" class="cflabel">Phone Number:</label>
+						<input type="tel" name="phone" id="phone" required="required" placeholder="Required">
+						<br>
+						<label for="email" class="cflabel">Email:</label>
+						<input type="email" name="email" id="email" placeholder="Optional">
+						<br>
+						<label for="website" class="cflabel">Website:</label>
+						<input type="text" name="website" id="website" placeholder="Optional">
+						<br>
+					</fieldset>
+					<fieldset>
+						<legend>Email</legend>
+						<textarea name="message" id="message" rows="10" placeholder="Comments/Questions/Corrections/Concerns/etc..."></textarea>
+						<br>
+						<input type="submit" value="Send" id="btnsubmit" name="btn_submit">
+						<input type="reset" value="Reset" id="btnreset" name="btn_reset">
+					</fieldset>
+				</form>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		<footer>
+			<p>Copyright&copy; <a href="/index.html">Brian Kallie</a></p>
+		</footer>
+	</div>
+</body>
+</html>
